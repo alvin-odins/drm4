@@ -154,13 +154,20 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
-				
+					<h2>Data Visualisations for decision</h2>
+					<p></p>
+					<p>Lorem impsum magenntum filipo odestu ramndom matheo</p>
+					<a class="btn btn-default">more info</a>
 				</div>
 				<div class="col-sm-4">
 					<div id="chartdiv" style="width: 100%; height: 250px; background: #fff;" ></div>
+					<p></p>
+					<p>Lorem impsum magenntum filipo odestu ramndom matheo</p>
 				</div>
 				<div class="col-sm-4">
 					<div id="chartdiv1" style="width: 100%; height: 250px; background: #fff;" ></div>
+					<p></p>
+					<p>Lorem impsum magenntum filipo odestu ramndom matheo</p>
 				</div>
 <!--				<div class="col-sm-3"></div>-->
 			</div>

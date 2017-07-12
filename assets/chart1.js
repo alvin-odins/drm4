@@ -30,7 +30,7 @@ AmCharts.makeChart("chartdiv",
 					"valueAxes": [
 						{
 							"id": "ValueAxis-1",
-							"title": "Axis title"
+//							"title": "Axis title"
 						}
 					],
 					"allLabels": [],
@@ -43,7 +43,7 @@ AmCharts.makeChart("chartdiv",
 						{
 							"id": "Title-1",
 							"size": 15,
-							"text": "Chart Title"
+							"text": ""
 						}
 					],
 					"dataProvider": [
