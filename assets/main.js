@@ -1,119 +1,13 @@
+var target = $('#sub-intro')
 
-	AmCharts.makeChart( "mapdiv", {
-  /**
-   * this tells amCharts it's a map
-   */
-  "type": "map",
-	addClassNames: true,
-  forceNormalize: true,
-  dragMap: false,
+function subintroHover(target){
+	target
+		.on('mouseover', function() {
+			$(this).addClass('subintro-hover');
+	})
+		.on('mouseout', function() {
+		$(this).removeClass('subintro-hover');
+	});
+}
 
-  /**
-   * create data provider object
-   * map property is usually the same as the name of the map file.
-   * getAreasFromMap indicates that amMap should read all the areas available
-   * in the map data and treat them as they are included in your data provider.
-   * in case you don't set it to true, all the areas except listed in data
-   * provider will be treated as unlisted.
-   */
-  "dataProvider": {
-//		"mapURL": "worldHigh.svg",
-    "map": "worldHigh",
-    "getAreasFromMap": true,
-		"zoomLevel": 2.86791,
-     "zoomLatitude": -1.626942,
-     "zoomLongitude": 20.373778,
-		"areas":[
-      { "id": "AO", color: "#b03a2e", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "BF", color: "#D35400", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "BI", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "BJ", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "BW", color: "#67b7dc", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "CD", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "CF", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "CG", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "CI", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "CM", color: "#67b7dc", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "DJ", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "DZ", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "EG", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "ER", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "ET", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "GA", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "GH", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "GM", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "GN", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "GQ", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "GW", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "KE", 
-			 	"color": "#00CC00",
-				customData: "<img src='https://www.google.com.et/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiO4dj70f7UAhXQa1AKHbasBP0QjRwIBw&url=http%3A%2F%2Fwww.crakenya.org%2Fcounty%2Fnairobi%2F&psig=AFQjCNH2UHCjavqPWAjgAStmkM6GwTTzcg&ust=1499773516209782' style='width: 50px; height: 50px; float: left; margin-right: 10px;' /><p><b>positive indicators</b>, Improving standards.</p>"
-			},
-      { "id": "LR", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "LS", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "LY", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "MA", color: "#777777", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "MG", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "ML", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "MR", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "MW", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "MZ", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "NA", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "NE", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "NG", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "RW", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "SD", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "SL", color: "#17202a", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-			{ "id": "SN", 
-			 	"color": "#00CC00",
-				customData: "<img src='https://www.google.com.et/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiO4dj70f7UAhXQa1AKHbasBP0QjRwIBw&url=http%3A%2F%2Fwww.crakenya.org%2Fcounty%2Fnairobi%2F&psig=AFQjCNH2UHCjavqPWAjgAStmkM6GwTTzcg&ust=1499773516209782' style='width: 50px; height: 50px; float: left; margin-right: 10px;' /><p><b>Moderate Levels</b>, Requires more investment.</p>"
-			},
-      { "id": "SO", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "SS", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "SZ", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "TD", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "TG", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "TN", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-			{ "id": "TZ", 
-			 	"color": "#00CC00",
-				customData: "<img src='https://www.google.com.et/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiO4dj70f7UAhXQa1AKHbasBP0QjRwIBw&url=http%3A%2F%2Fwww.crakenya.org%2Fcounty%2Fnairobi%2F&psig=AFQjCNH2UHCjavqPWAjgAStmkM6GwTTzcg&ust=1499773516209782' style='width: 50px; height: 50px; float: left; margin-right: 10px;' /><p><b>Optimistic outlook </b>, Dealing with unresponsive partners</p>"
-			},
-      { "id": "UG", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "ZA", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "ZM", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "ZW", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" },
-      { "id": "EH", color: "#F0B67F", customData: "<p><b>No known parameters</b>, Assessment required</p>" }
-    ]
-  },
-
-  /**
-   * create areas settings
-   * autoZoom set to true means that the map will zoom-in when clicked on the area
-   * selectedColor indicates color of the clicked area.
-   */
-  "areasSettings": {
-//    "autoZoom": true,
-//    "selectedColor": "#3eb5f0"
-		autoZoom: true,
-		"balloonText": "[[title]] [[customData]]",
-    selectedColor: "#de4c4f",
-    rollOverColor: " #FFFFFF",
-//    rollOverOutlineColor: "#000000",
-    outlineAlpha: .4,
-//    outlineColor: "#000000",
-    outlineThickness: 0.5,
-    color: "#138D75",
-//		"selectable": true,
-  },
-	"zoomControl": {
-//    "minZoomLevel": 2.0
-  },
-	"responsive": {
-    "enabled": true
-  },
-
-  /**
-   * let's say we want a small map to be displayed, so let's create it
-   */
-//  "bigMap": {}
-} );
+subintroHover(target);
