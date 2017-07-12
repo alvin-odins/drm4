@@ -67,6 +67,19 @@ body{
   border-radius: 4px;
 }
 
+.charts-hover{
+	border: 1px solid #FFF;
+	webkit-box-shadow: 0 20px 50px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 20px 50px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 20px 50px 0 rgba(0,0,0,0.2);
+  webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  border-radius: 4px;
+}
+
 .prof_sec h3{
 	color: #fff;
 /*	font-size: 1.2em;*/
@@ -123,6 +136,29 @@ body{
 	font-size: 26px;
 }
 
+.section-tw{
+	
+}
+
+.section-tw h2{
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+}
+
+.section-tw h3{
+	color: #FFF;
+	font-family: 'Zilla Slab', serif;
+}
+
+.section-tw p{
+	color: #FFF;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#charts-sub{
+	padding: 40px 0;
+}
+
 /*
 .prof_sec ul{
 	display: block;
@@ -160,4 +196,20 @@ body{
 
 .bg_midblue{
 	background:  #a9cce3;
+}
+
+.bg_gradient{
+/*	background: linear-gradient(0deg, #ec5218, #1665c1);*/
+/*	background: linear-gradient(132deg, #ec5218, #1665c1);*/
+	background: linear-gradient(132deg, #535364, #79589F);
+	background-size: 400% 400%;
+	animation: BackgroundGradient 30s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+	0% {background-position: 0% 50%;} /* 0 seconds */
+	
+	50% {background-position: 100% 50%;} /* 15 seconds because we set 30s */
+	
+	100% {background-position: 0% 50%;} /* 30 seconds */
 }

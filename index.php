@@ -12,6 +12,9 @@
 	<script src="assets/ammap.js" type="text/javascript"></script>
 	<script src="assets/worldHigh.js" type="text/javascript"></script>
 	<script src="assets/worldLow.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/amcharts.js"></script>
+	<script type="text/javascript" src="assets/pie.js"></script>
+		<script type="text/javascript" src="assets/serial.js"></script>
 	<script src="assets/light.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="assets/bootstrap1.css" type="text/css">
 	<link rel="stylesheet" href="assets/main.css" type="text/css">
@@ -87,12 +90,14 @@
 	
 	<section id="intro" class="prof_sec">
 		<div class="container">
+<!--
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 				<h1 class="text-center">Health Advocacy Toolkit</h1>
 				<h5 class="text-center">Country Level information backed with data visualizations for meaningful interraction</h5>
 			</div>
 		</div>
+-->
 			
 		<div class="row">
 			<div class="col-md-3 col-sm-3"></div>
@@ -144,11 +149,45 @@
 		</div>
 	</div>
 	</section>
-
-	<section id="mapnext" class="section mapnext bg_white">
+	
+	<section id="charts-sub">
 		<div class="container">
 			<div class="row">
-				<h1 class="section text-center">Toolkit for Health Advocacy</h1>
+				<div class="col-sm-4">
+				
+				</div>
+				<div class="col-sm-4">
+					<div id="chartdiv" style="width: 100%; height: 250px; background: #fff;" ></div>
+				</div>
+				<div class="col-sm-4">
+					<div id="chartdiv1" style="width: 100%; height: 250px; background: #fff;" ></div>
+				</div>
+<!--				<div class="col-sm-3"></div>-->
+			</div>
+		</div>
+	</section>
+
+	<section id="mapnext" class="section-tw mapnext bg_gradient">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-7 col-md-6">
+					<h2 class="section">Lorem Ipsum</h2>
+					<h3>Abstractus Decorum</h3>
+					<p>Lorem ipsum magnus decorum alpha liberatum expressum infinitum edestrano filipinatus indentus</p>
+					
+					<h3>Sagentum Brocconoiti</h3>
+					<p>Lorem ipsum magnus decorum alpha liberatum expressum infinitum edestrano filipinatus indentus</p>
+					
+					<h3>Macmanimus Solistary</h3>
+					<p>Lorem ipsum magnus decorum alpha liberatum expressum infinitum edestrano filipinatus indentus</p>
+					
+					<h3>Abstractus Decorum</h3>
+					<p>Lorem ipsum magnus decorum alpha liberatum expressum infinitum edestrano filipinatus indentus</p>
+				</div>
+				
+				<div class="col-xs-12 col-sm-5 col-md-6">
+					
+				</div>
 			</div>
 		</div>
 	</section>
@@ -158,6 +197,8 @@
 <script src="assets/bootstrap.min.js"></script>
 <script src="assets/map.js"></script>
 <script src="assets/main.js"></script>
+<script src="assets/chart1.js"></script>
+<script src="assets/chart2.js"></script>
 <script src="assets/responsive.min.js" type="text/css"></script>
 
 

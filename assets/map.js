@@ -80,13 +80,14 @@ var map = AmCharts.makeChart("mapdiv", {
     "outlineAlpha": .4,
 //    outlineColor: "#000000",
     "outlineThickness": 0.5,
-    "color": " #2e86c1",
+    "color": " #79589F",
+//    "color": " #2e86c1",
         "selectable": true,
   },
   "zoomControl": {
     "minZoomLevel": 2.7
   },
     "responsive": {
-    "enabled": true
+    "enabled": false
   },
 });
