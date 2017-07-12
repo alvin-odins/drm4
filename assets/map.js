@@ -27,7 +27,7 @@ var map = AmCharts.makeChart("mapdiv", {
       { "id": "ET" },
       { "id": "GA" },
       { "id": "GH" },
-      { "id": "GM" },
+      { "id": "GM", "callout": true },
       { "id": "GN" },
       { "id": "GQ" },
       { "id": "GW" },

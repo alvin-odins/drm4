@@ -99,9 +99,9 @@
 			<div id="sub-intro" class="col-md-6 col-sm-6">	
 				<h3 class="text-center">Health Advocacy</h3>
 				<ul class="list-inline text-center">
-					<li>resources</li>
-					<li>policy</li>
-					<li>media</li>
+					<li><a href="#">resources</a></li>
+					<li><a href="#">policy</a></li>
+					<li><a href="#">media</a></li>
 				</ul>
 				<p class="text-center">This toolkit is designed to give a first hand information on the situation around health through interractive data</p>
 			</div>
@@ -145,7 +145,7 @@
 	</div>
 	</section>
 
-	<section id="mapnext" class="section mapnext bg_midblue">
+	<section id="mapnext" class="section mapnext bg_white">
 		<div class="container">
 			<div class="row">
 				<h1 class="section text-center">Toolkit for Health Advocacy</h1>
