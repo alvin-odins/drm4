@@ -110,7 +110,7 @@
 			
 		<div id="resources" class="row">
 			<div class="col-md-3 col-sm-6">
-				<a href="#"><i class="glyphicon glyphicon-book"></i></a>
+				<a href="#"><i class="fa fa-book"></i></a>
 				<p></p>
 				<h3>
 					<a href="#">resources</a>
@@ -118,7 +118,7 @@
 				<p>range of training manuals and guides for capacity building to civil society organisations</p>
 			</div>	
 			<div class="col-md-3 col-sm-6">
-				<a href="#"><i class="glyphicon glyphicon-book"></i></a>
+				<a href="#"><i class="fa fa-briefcase"></i></a>
 				<p></p>
 				<h3>
 					<a href="#">policy instruments</a>
@@ -126,7 +126,7 @@
 				<p>knowledge base and up-to-date informaiton on exisiting and mainstream policy guidelines</p>
 			</div>	
 			<div class="col-md-3 col-sm-6">
-				<a href="#"><i class="glyphicon glyphicon-book"></i></a>
+				<a href="#"><i class="fa fa-line-chart"></i></a>
 				<p></p>
 				<h3>
 					<a href="#">data set</a>
@@ -134,7 +134,7 @@
 				<p>visualization of country data and comparative analysis of country data</p>
 			</div>	
 			<div class="col-md-3 col-sm-6">
-				<a href="#"><i class="glyphicon glyphicon-book"></i></a>
+				<a href="#"><i class="fa fa-tv"></i></a>
 				<p></p>
 				<h3>
 					<a href="#">media center</a>
